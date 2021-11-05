@@ -1,7 +1,14 @@
 <div class="container">
     <div class="card">
         <div class="card-header border-bottom-blue">
-            <a class="font20px font-weight-bold">Manager List</a>
+            <div class="row ">
+                <div class="col-6 font20px font-weight-bold self-align-center">Manager List</div>
+                <div class="col-6 text-right">
+                    <a [routerLinkActive]="['active']" [routerLink]="['/add-manager']"><button class="btn btn-lg btn-default background-green font16px border-right-css color-white" type="submit"><img class="img-fluid" src="../../../assets/icons/Frame (1).svg"></button>
+                    <button class="btn btn-lg btn-default background-green font16px border-left-css color-white" type="submit">Add Manager</button>
+                </a>
+                </div>
+            </div>
         </div>
         <div>
             <div class="card-body">
@@ -10,7 +17,7 @@
                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" *ngFor="let item of managerArray">
                             <div class="card mb-3 pt-1 pb-1 pl-1 pr-3">
                                 <div class="row">
-                                    <div class="col-sm-12 col-lg-2 col-md-2 col-xl-2 text-center w-100 bg-secondary theme-color rounded paddingbottom15px paddingtop15px"><img class="img-fluid mt-4" src="../../../assets/icons/Vector (9).svg">
+                                    <div class="col-sm-12 col-lg-2 col-md-2 col-xl-2 text-center w-100 bg-light theme-color rounded paddingbottom15px paddingtop15px"><img class="img-fluid mt-4" src="../../../assets/icons/Vector (9).svg">
                                     </div>
                                     <div class="col-sm-12 col-lg-10 col-md-10 col-xl-10">
                                         <div class="font20px font-weight-bold mb-1">{{item.managername}}</div>
@@ -19,10 +26,8 @@
                                         <div class="font14px color-green font-weight-bold">View Profile <img class="img-fluid" src="../../../assets/icons/arrow-right.svg"></div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

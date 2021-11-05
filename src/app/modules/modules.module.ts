@@ -7,6 +7,8 @@ import { HeaderComponent } from '../core/header/header.component';
 import { SidebarComponent } from '../core/sidebar/sidebar.component';
 import { StoreListComponent } from './store-list/store-list.component';
 import { ManagersListComponent } from './managers-list/managers-list.component';
+import { ProductCategoryComponent } from './product-category/product-category.component';
+import { AddManagerComponent } from './add-manager/add-manager.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { ManagersListComponent } from './managers-list/managers-list.component';
     SidebarComponent,
     DashboardComponent,
     StoreListComponent,
-    ManagersListComponent
+    ManagersListComponent,
+    ProductCategoryComponent,
+    AddManagerComponent
   ],
   imports: [
     CommonModule,

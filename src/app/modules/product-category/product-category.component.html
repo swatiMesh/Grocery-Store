@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header border-bottom-blue pb-0">
+            <div class="row ">
+                <div class="col-6 font20px font-weight-bold self-align-center">Products Category List</div>
+                <div class="col-6 text-right">
+                    <a [routerLinkActive]="['active']" [routerLink]="['/']"><button class="btn btn-lg btn-default background-green font16px border-right-css color-white" type="submit"><img class="img-fluid" src="../../../assets/icons/Frame (1).svg"></button>
+                    <button class="btn btn-lg btn-default background-green font16px border-left-css color-white" type="submit">Add Category</button>
+                </a>
+                </div>
+            </div>
+            <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                <li class="nav-item color-green">
+                    <a class="nav-link active" id="pill-vegetarian-tab" data-toggle="pill" href="#pill-vegetarian" role="tab" aria-controls="pill-vegetarian" aria-selected="true"><img src="../../../assets/icons/vegeterian_symbol.svg"> Vegetarian</a>
+                </li>
+                <li class="nav-item color-brown">
+                    <a class="nav-link" id="pill-non-vegetarian-tab" data-toggle="pill" href="#pill-non-vegetarian" role="tab" aria-controls="pill-non-vegetarian" aria-selected="false"><img src="../../../assets/icons/nonveg_symbol.svg"> Non-Vegetarian</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pill-vegetarian" role="tabpanel" aria-labelledby="pill-vegetarian-tab">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" *ngFor="let item of vegCategoryArray">
+                            <div class="card mb-3 pt-1 pb-1 pl-1 pr-3">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-2 col-md-2 col-xl-2 text-center w-100 bg-light theme-color rounded self-align-center"><img class="img-fluid" [src]="item.categoryImg">
+                                    </div>
+                                    <div class="col-sm-12 col-lg-10 col-md-10 col-xl-10">
+                                        <div class="font20px font-weight-bold">{{item.category}}</div>
+                                        <div class="font14px color-grey">{{item.categoryDesc}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pill-non-vegetarian" role="tabpanel" aria-labelledby="pill-non-vegetarian-tab">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" *ngFor="let item of nonVegCategoryArray">
+                            <div class="card mb-3 pt-1 pb-1 pl-1 pr-3">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-2 col-md-2 col-xl-2 text-center w-100 bg-light theme-color rounded self-align-center"><img class="img-fluid" [src]="item.categoryImg">
+                                    </div>
+                                    <div class="col-sm-12 col-lg-10 col-md-10 col-xl-10">
+                                        <div class="font20px font-weight-bold">{{item.category}}</div>
+                                        <div class="font14px color-grey">{{item.categoryDesc}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

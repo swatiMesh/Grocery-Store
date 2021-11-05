@@ -38,7 +38,7 @@
     overflow-y: auto;
     list-style: none !important;
     margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-right: 0px !important;
 }
 
 .sidebar-list {
@@ -48,11 +48,11 @@
     // flex: 1;
     -ms-flex-align: center;
     align-items: center;
-    padding: 12px;
+    padding: 12px 12px 12px 0px;
     text-decoration: none;
     white-space: nowrap;
     transition: background .3s, color .3s;
-    font-size: 13px;
+    font-size: 14px;
     background: 0 0;
 }
 

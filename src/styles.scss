@@ -70,6 +70,11 @@
         font-family: 'Poppins-Regular';
     }
     
+    .color-brown {
+        color: #92282a;
+        font-family: 'Poppins-Regular';
+    }
+    
     .background-white {
         background-color: #ffffff;
     }
@@ -104,7 +109,7 @@
     }
     
      ::placeholder {
-        color: #757575 !important;
+        color: #d2d2d2 !important;
     }
     
     .container {
@@ -196,4 +201,16 @@
     
     .padding-25 {
         padding: 25%;
+    }
+    
+    .self-align-center {
+        align-self: center;
+    }
+    
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: inherit;
+        background-color: white;
+        border-bottom: 2px solid;
+        border-radius: 0px;
     }
